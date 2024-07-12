@@ -1,1 +1,4 @@
-/home/osboxes/WorkspaceINF335/inf335-prj05/src/test/java/br/unicamp/ic/inf335/app/inf335_prj05/AppTest.java
+/home/osboxes/WorkspaceINF335/INF335-CI-jenkins/src/test/java/br/unicamp/ic/inf335/app/inf335_prj05/AnuncioBeanTest.java
+/home/osboxes/WorkspaceINF335/INF335-CI-jenkins/src/test/java/br/unicamp/ic/inf335/app/inf335_prj05/AppTest.java
+/home/osboxes/WorkspaceINF335/INF335-CI-jenkins/src/test/java/br/unicamp/ic/inf335/app/inf335_prj05/ProdutoBeanTest.java
+/home/osboxes/WorkspaceINF335/INF335-CI-jenkins/src/test/java/br/unicamp/ic/inf335/app/inf335_prj05/AnuncianteBeanTest.java

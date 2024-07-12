@@ -3,5 +3,7 @@
 .factorypath
 .project
 .springBeans
-/.settings/
+/.settings
+/target
 .sts4-cache
+/target/
