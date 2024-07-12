@@ -10,10 +10,10 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git branch: 'main', url: 'https://github.com/RBonacin/INF335-Jenkins'
+                git branch: 'main', url: 'https://github.com/caiodia/INF335-CI-jenkins'
 
                 // Run Maven on a Unix agent.
-                sh "cd meu-app; mvn -Dmaven.test.failure.ignore=true clean package"
+                sh "mvn -Dmaven.test.failure.ignore=true clean package"
 
                 // To run Maven on a Windows agent, use
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
@@ -23,8 +23,8 @@ pipeline {
                 // If Maven was able to run the tests, even if some of the test
                 // failed, record the test results and archive the jar file.
                 success {
-                    junit '**/meu-app/target/surefire-reports/TEST-*.xml'
-                    archiveArtifacts 'meu-app/target/*.jar'
+                    junit '**/target/surefire-reports/TEST-*.xml'
+                    archiveArtifacts '/target/*.jar'
                 }
             }
         }
